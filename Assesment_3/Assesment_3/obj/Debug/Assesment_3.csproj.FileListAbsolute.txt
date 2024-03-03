@@ -1,0 +1,7 @@
+D:\Assesments_infinite\Assesment_3\Assesment_3\bin\Debug\Assesment_3.exe.config
+D:\Assesments_infinite\Assesment_3\Assesment_3\bin\Debug\Assesment_3.exe
+D:\Assesments_infinite\Assesment_3\Assesment_3\bin\Debug\Assesment_3.pdb
+D:\Assesments_infinite\Assesment_3\Assesment_3\obj\Debug\Assesment_3.csproj.AssemblyReference.cache
+D:\Assesments_infinite\Assesment_3\Assesment_3\obj\Debug\Assesment_3.csproj.CoreCompileInputs.cache
+D:\Assesments_infinite\Assesment_3\Assesment_3\obj\Debug\Assesment_3.exe
+D:\Assesments_infinite\Assesment_3\Assesment_3\obj\Debug\Assesment_3.pdb
