@@ -1,0 +1,2 @@
+D:\Assesments_infinite\C_sharp\Assesments\Test_2\Test_2\obj\Debug\Test_2.csproj.AssemblyReference.cache
+D:\Assesments_infinite\C_sharp\Assesments\Test_2\Test_2\obj\Debug\Test_2.csproj.CoreCompileInputs.cache
