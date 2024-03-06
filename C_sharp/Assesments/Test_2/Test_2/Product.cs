@@ -19,13 +19,13 @@ class ProductSorter
         for (int i = 0; i < products.Length; i++)
         {
             Console.Write($"Product {i + 1}  ID -> ");
-            int productId = int.Parse(Console.ReadLine());
-            Console.Write($"Product {i + 1}  Name: ");
-            string productName = Console.ReadLine();
-            Console.Write($"Product {i + 1}  Price: ");
-            double price = double.Parse(Console.ReadLine());
+            int product_Id = int.Parse(Console.ReadLine());
+            Console.Write($"Product {i + 1}  Name -> ");
+            string product_Name = Console.ReadLine();
+            Console.Write($"Product {i + 1}  Price -> ");
+            double product_Price = double.Parse(Console.ReadLine());
 
-            products[i] = new Product { Product_Id = productId, Product_Name = productName, Product_Price = price };
+            products[i] = new Product { Product_Id = product_Id, Product_Name = product_Name, Product_Price = product_Price };
         }
 
         // Sorting 
@@ -33,6 +33,7 @@ class ProductSorter
 
      
         Console.WriteLine("Sorted Products based on Price:");
+
         foreach (Product product in products)
         {
             Console.WriteLine($"Product ID: {product.Product_Id}, Name: {product.Product_Name}, Price: {product.Product_Price}");
