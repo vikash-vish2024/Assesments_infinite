@@ -1,0 +1,7 @@
+D:\Assesments_infinite\C_sharp\Assignments\Assignment_4\Concession\bin\Debug\Concession.exe.config
+D:\Assesments_infinite\C_sharp\Assignments\Assignment_4\Concession\bin\Debug\Concession.exe
+D:\Assesments_infinite\C_sharp\Assignments\Assignment_4\Concession\bin\Debug\Concession.pdb
+D:\Assesments_infinite\C_sharp\Assignments\Assignment_4\Concession\obj\Debug\Concession.csproj.AssemblyReference.cache
+D:\Assesments_infinite\C_sharp\Assignments\Assignment_4\Concession\obj\Debug\Concession.csproj.CoreCompileInputs.cache
+D:\Assesments_infinite\C_sharp\Assignments\Assignment_4\Concession\obj\Debug\Concession.exe
+D:\Assesments_infinite\C_sharp\Assignments\Assignment_4\Concession\obj\Debug\Concession.pdb
