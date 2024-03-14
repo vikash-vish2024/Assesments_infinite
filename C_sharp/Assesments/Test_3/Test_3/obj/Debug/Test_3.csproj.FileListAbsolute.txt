@@ -1,0 +1,7 @@
+D:\Assesments_infinite\C_sharp\Assesments\Test_3\Test_3\bin\Debug\Test_3.exe.config
+D:\Assesments_infinite\C_sharp\Assesments\Test_3\Test_3\bin\Debug\Test_3.exe
+D:\Assesments_infinite\C_sharp\Assesments\Test_3\Test_3\bin\Debug\Test_3.pdb
+D:\Assesments_infinite\C_sharp\Assesments\Test_3\Test_3\obj\Debug\Test_3.csproj.AssemblyReference.cache
+D:\Assesments_infinite\C_sharp\Assesments\Test_3\Test_3\obj\Debug\Test_3.csproj.CoreCompileInputs.cache
+D:\Assesments_infinite\C_sharp\Assesments\Test_3\Test_3\obj\Debug\Test_3.exe
+D:\Assesments_infinite\C_sharp\Assesments\Test_3\Test_3\obj\Debug\Test_3.pdb
