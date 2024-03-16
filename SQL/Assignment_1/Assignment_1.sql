@@ -40,12 +40,16 @@ check(Actual_End_Date>Planned_End_Date)
 
 --Employee Project Task Table
 create table Emp_Project_Task(
-Project_ID numeric(3) foreign key references Project(Project_ID),
+Project_ID numeric(3),
 Empno numeric(4),
 Start_Date date,
 End_Date date,
 Task varchar(25),
-Status varchar(15))
+Status varchar(15),
+primary key(Project_ID,Empno),
+foreign key (Project_ID)references Project(Project_ID),
+foreign key (Empno)references Employee(Empno))
+
 
 --(-------------------------------------------------------)--
 --inserting client data
@@ -101,4 +105,4 @@ insert into Emp_Project_Task values
 (402,7011,'2011-10-22','2011-10-31','Sign Off','Completed'),
 (402,7010,'2011-08-01','2011-08-20','System Analysis','Completed'),
 (402,7002,'2011-08-22','2011-09-30','System Design','Completed'),
-(401,7004,'2011-10-01',null,'Coding','in Process')
+(402,7004,'2011-10-01',null,'Coding','in Process')
