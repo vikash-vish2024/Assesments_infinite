@@ -110,7 +110,7 @@ select Ename,salary from Employees
 where (Ename='miller' or Ename='smith')
 order by Ename
 
--- Find out the names of the employees whose name begin with ‘A’ or ‘M’.
+-- Find out the names of the employees whose name begin with â€˜Aâ€™ or â€˜Mâ€™.
 select Ename from Employees
 where Ename like 'A%M'
 
@@ -124,7 +124,7 @@ where salary not between 1500 and 2850
 order by salary
 
 --Find all managers who have more than 2 employees reporting to them
-select  Mgr_id, count(Empno) as EMP_COUNT
+select  Mgr_id, count(Empno) as Emp_count
 from Employees
 group by Mgr_id
-having count(EMPNO) > 2;
+having count(empno) > 2;
