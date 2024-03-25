@@ -179,7 +179,8 @@ as
 		--select @Holiday_Name= holiday_name from holiday where GETDATE()=Holiday_Date
 		select @Holiday_Name=Holiday_Name from Holiday where convert(date,getdate())=Holiday_Date
 		if(@Holiday_Name is not null)
-			print'Today is Holiday for '+@holiday_Name+' changes are restricted'
+			--print'Today is Holiday for '+@holiday_Name+' changes are restricted'
+			raiserror('Today is holiday for %s changes are restricted ',16,1,@holiday_Name)
 			rollback
 	end
 		
