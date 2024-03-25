@@ -91,53 +91,69 @@ as
 	--for new year 
 		declare @date date
 		select @date=Holiday_date from Holiday where holiday_name='New Year'
-			if(getdate()=@date)
-				Print'Today is Holiday for New-Year all changes are restricted'
+		declare @D_diff int
+		set @D_diff= datediff(dd,@date,getdate())
+			if(@D_diff<=0)
+				raiserror('Today is Holiday for New-Year all changes are restricted',16,1)
 			
 	--For Pongal 
 		declare @date1 date
 		select @date1=Holiday_date from Holiday where holiday_name='Pongal'
-
-			if(getdate()=@date1)
-				Print'Today is Holiday for Pongal all changes are restricted'
+		declare @D_diff1 int
+		set @D_diff1= datediff(dd,@date1,getdate())
+			if(@D_diff1<=0)
+				raiserror('Today is Holiday for Pongal all changes are restricted',16,1)
 			
 	--Republic Day
 		declare @date2 date
 		select @date2=Holiday_date from Holiday where holiday_name='Republic Day'
-			if(getdate()=@date2)
-				Print'Today is Holiday for Republic-Day all changes are restricted'
+		declare @D_diff2 int
+		set @D_diff2= datediff(dd,@date2,getdate())
+			if(@D_diff2<=0)
+				raiserror('Today is Holiday for Republic-Day all changes are restricted',16,1)
 			
 
 	--Holi
 		declare @date3 date
 		select @date3=Holiday_date from Holiday where holiday_name='Holi'
-			if(getdate()=@date3)
-				Print'Today is Holiday for Holi all changes are restricted'
+		declare @D_diff3 int
+		set @D_diff3= datediff(dd,@date3,getdate())
+			if(@D_diff3<=0)
+				raiserror('Today is Holiday for Holi all changes are restricted',16,1)
 
 	--Ugadi
 		declare @date4 date
 		select @date4=Holiday_date from Holiday where holiday_name='Ugadi'
-			if(getdate()=@date4)
-				Print'Today is Holiday for Ugadi all changes are restricted'
+		declare @D_diff4 int
+		set @D_diff4= datediff(dd,@date4,getdate())
+			if(@D_diff4<=0)
+				raiserror('Today is Holiday for Ugadi all changes are restricted',16,1)
 	--May Day/Maharashtra Day
 		declare @date5 date
 		select @date5=Holiday_date from Holiday where holiday_name='May Day/Maharashtra Day'
-			if(getdate()=@date5)
-				Print'Today is Holiday for May Day/Maharastra Day all changes are restricted'
+		declare @D_diff5 int
+		set @D_diff5= datediff(dd,@date5,getdate())
+			if(@D_diff5<=0)
+				raiserror('Today is Holiday for May Day/Maharastra Day all changes are restricted',16,1)
 	--Independence Day
 		declare @date6 date
 		select @date6=Holiday_date from Holiday where holiday_name='Independence Day'
-			if(getdate()=@date6)
-				Print'Today is Holiday for Independence Day all changes are restricted'
+		declare @D_diff6 int
+		set @D_diff6= datediff(dd,@date6,getdate())
+			if(@D_diff6<=0)
+				raiserror('Today is Holiday for Independence Day all changes are restricted',16,1)
 	--Raksha-Bandhan
 		declare @date7 date
 		select @date7=Holiday_date from Holiday where holiday_name='Raksha-Bandhan'
-			if(getdate()=@date7)
-				Print'Today is Holiday for Raksha-Bandhan Day all changes are restricted'
+		declare @D_diff7 int
+		set @D_diff7= datediff(dd,@date7,getdate())
+			if(@D_diff7<=0)
+				raiserror('Today is Holiday for Raksha-Bandhan Day all changes are restricted',16,1)
 		--else
-		-- print'Testing'
+		-- raiserror('Testing',16,1)
 		-- rollback
 	end
 
 	insert into Employees values(222,null,null,null,null,null,null,null)
+
 	select * from Employees
