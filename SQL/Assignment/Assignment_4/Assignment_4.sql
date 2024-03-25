@@ -60,8 +60,8 @@ begin
 -- first number is table to be printed second number is until when to be printed
 Exec TablePrint1 5,6
 
---Create a trigger to restrict data manipulation on EMP table during General holidays.
---Display the error message like “Due to Independence day you cannot manipulate data” or "Due To Diwali", you cannot manupulate" etc
+--4.Create a trigger to restrict data manipulation on EMP table during General holidays.
+--Display the error message like â€œDue to Independence day you cannot manipulate dataâ€ or "Due To Diwali", you cannot manupulate" etc
 create  table Holiday
 (Holiday_Date date,
 Holiday_Name varchar(30))
@@ -98,45 +98,45 @@ as
 		declare @date1 date
 		select @date1=Holiday_date from Holiday where holiday_name='Pongal'
 
-			if(getdate()=@date)
+			if(getdate()=@date1)
 				Print'Today is Holiday for Pongal all changes are restricted'
 			
 	--Republic Day
 		declare @date2 date
 		select @date2=Holiday_date from Holiday where holiday_name='Republic Day'
-			if(getdate()=@date)
+			if(getdate()=@date2)
 				Print'Today is Holiday for Republic-Day all changes are restricted'
 			
 
 	--Holi
 		declare @date3 date
 		select @date3=Holiday_date from Holiday where holiday_name='Holi'
-			if(getdate()=@date)
+			if(getdate()=@date3)
 				Print'Today is Holiday for Holi all changes are restricted'
 
 	--Ugadi
 		declare @date4 date
 		select @date4=Holiday_date from Holiday where holiday_name='Ugadi'
-			if(getdate()=@date)
+			if(getdate()=@date4)
 				Print'Today is Holiday for Ugadi all changes are restricted'
 	--May Day/Maharashtra Day
 		declare @date5 date
 		select @date5=Holiday_date from Holiday where holiday_name='May Day/Maharashtra Day'
-			if(getdate()=@date)
+			if(getdate()=@date5)
 				Print'Today is Holiday for May Day/Maharastra Day all changes are restricted'
 	--Independence Day
 		declare @date6 date
 		select @date6=Holiday_date from Holiday where holiday_name='Independence Day'
-			if(getdate()=@date)
+			if(getdate()=@date6)
 				Print'Today is Holiday for Independence Day all changes are restricted'
 	--Raksha-Bandhan
 		declare @date7 date
-		select @date7=Holiday_date from Holiday where holiday_name='Independence Day'
-			if(getdate()=@date)
-				Print'Today is Holiday for Independence Day all changes are restricted'
-		else
-		 print'Testing'
-		 rollback
+		select @date7=Holiday_date from Holiday where holiday_name='Raksha-Bandhan'
+			if(getdate()=@date7)
+				Print'Today is Holiday for Raksha-Bandhan Day all changes are restricted'
+		--else
+		-- print'Testing'
+		-- rollback
 	end
 
 	insert into Employees values(222,null,null,null,null,null,null,null)
