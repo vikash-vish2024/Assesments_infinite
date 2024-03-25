@@ -20,6 +20,17 @@ declare @fact_out int --output
 execute Factorial @givenNum,@fact_out out
 print 'Factorial of ' +cast(@givennum as varchar(5))+  ' is: ' +cast(@fact_out as varchar(10))
 
+--factorial of 5
+declare @fact1 int
+declare @num1 int=5
+set @fact1 =1
+	while(@num1>1)
+		begin
+			set @fact1=@fact1*@num1
+			set @num1=@num1-1
+		end 
+	select @fact1 as 'Factorial'
+
 --2.Create a stored procedure to generate multiplication tables up to a given number.
 create or alter proc TablePrint(@num int)
 as
@@ -149,11 +160,30 @@ as
 		set @D_diff7= datediff(dd,@date7,getdate())
 			if(@D_diff7<=0)
 				raiserror('Today is Holiday for Raksha-Bandhan Day all changes are restricted',16,1)
+		
 		--else
 		-- raiserror('Testing',16,1)
 		-- rollback
 	end
 
 	insert into Employees values(222,null,null,null,null,null,null,null)
+drop trigger if exists Trg_restrict_changes_onHolidays
 
+--logical changes
+create or alter trigger Trg_restrict_changes_onHolidays1
+on Employees
+for insert,update,delete
+as
+	begin 
+	declare @Holiday_Name varchar(20)
+		--select @Holiday_Name= holiday_name from holiday where GETDATE()=Holiday_Date
+		select @Holiday_Name=Holiday_Name from Holiday where convert(date,getdate())=Holiday_Date
+		if(@Holiday_Name is not null)
+			print'Today is Holiday for '+@holiday_Name+' changes are restricted'
+			rollback
+	end
+		
+	insert into Employees values(222,null,null,null,null,null,null,null)
+	delete from Employees where Empno like 222
 	select * from Employees
+
