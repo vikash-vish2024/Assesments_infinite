@@ -22,19 +22,19 @@ begin
     declare @GrossSalary float
     declare @NetSalary float
 
-    -- Calculate individual components
+    --Calculation of given 'HRA,DA,PF and IT
     set @HRA = 0.10 * @Salary;
     set @DA = 0.20 * @Salary;
     set @PF = 0.08 * @Salary;
     set @IT = 0.05 * @Salary;
 
-    -- Calculate deductions
+    -- Calculating deductions
     set @Deductions = @PF + @IT;
 
-    -- Calculate gross salary
+    -- Calculating gross salary
     set @GrossSalary = @Salary + @HRA + @DA;
 
-    -- Calculate net salary
+    -- Calculating net salary
     set @NetSalary = @GrossSalary - @Deductions;
 
     --Output
