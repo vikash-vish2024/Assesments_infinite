@@ -98,20 +98,16 @@ begin tran
 	--b.     For Deptno 20 employees  20% of sal as bonus
 	--c      For Others employees 5%of sal as bonus
 
-create or alter function calculate_bonus(@Deptno int,@salary int)
+create or alter function calculate_bonus(@deptno int)
 returns float
 begin
-    declare @bonus float
-   --For Deptno 10 employees 15% of sal as bonus.
-    if @Deptno = 10 
-        set @bonus = @salary * 0.15
-	--For Deptno 20 employees  20% of sal as bonus   ---??????
-    else if @deptno = 20 
-        set @bonus = @salary * 0.20
-   --For Others employees 5%of sal as bonus
-    else
-        set @bonus = @salary * 0.05
-   return @bonus;
+	declare @bonus int
+	if @deptno = 10 then
+			select @bonus = (Salary * 0.15) from Emp where Deptno = @deptno
+	else if @deptno = 20 then 
+			select @bonus = (Salary * 0.20) from Emp where Deptno = @deptno
+	else
+	 select @bonus = (Salary * 0.05) from Emp where Deptno = @deptno
+	end if
+	return @bonus
 end
-select * from calculate_bonus (10,6000)
---Some error can't able to solve
