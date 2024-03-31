@@ -1,0 +1,7 @@
+D:\ADO.Net\Assign_1\Assign_1\bin\Debug\Assign_1.exe.config
+D:\ADO.Net\Assign_1\Assign_1\bin\Debug\Assign_1.exe
+D:\ADO.Net\Assign_1\Assign_1\bin\Debug\Assign_1.pdb
+D:\ADO.Net\Assign_1\Assign_1\obj\Debug\Assign_1.csproj.AssemblyReference.cache
+D:\ADO.Net\Assign_1\Assign_1\obj\Debug\Assign_1.csproj.CoreCompileInputs.cache
+D:\ADO.Net\Assign_1\Assign_1\obj\Debug\Assign_1.exe
+D:\ADO.Net\Assign_1\Assign_1\obj\Debug\Assign_1.pdb
