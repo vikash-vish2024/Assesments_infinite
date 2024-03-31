@@ -118,7 +118,7 @@ namespace Assign_1
             Console.WriteLine("--------------------------------------------------------------------------------------------------------------------------------");
 
             //11.Display total number of employee who is youngest in the list
-            DateTime youngestDOB = emp.Min(x => x.DOB);
+            DateTime youngestDOB = emp.Max(x => x.DOB);
             var youngestEmp = emp.Where(x => x.DOB.Equals(youngestDOB));
             Console.WriteLine("employee who is youngest in the list");
             foreach(var v in youngestEmp)
