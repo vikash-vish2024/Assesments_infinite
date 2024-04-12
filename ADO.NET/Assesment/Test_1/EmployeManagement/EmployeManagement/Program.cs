@@ -58,7 +58,7 @@ namespace EmployeManagement
         {
 
             con = getConnection();
-            cmd = new SqlCommand("SELECT * FROM EDetails", con);
+            cmd = new SqlCommand("SELECT * FROM Employee_Details", con);
             SqlDataReader dr = cmd.ExecuteReader();
             Console.WriteLine("----Employees Details-----");
             while (dr.Read())
