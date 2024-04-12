@@ -1,0 +1,7 @@
+D:\Assesments_infinite\ADO.NET\Assesment\Test_1\EmployeManagement\EmployeManagement\bin\Debug\EmployeManagement.exe.config
+D:\Assesments_infinite\ADO.NET\Assesment\Test_1\EmployeManagement\EmployeManagement\bin\Debug\EmployeManagement.exe
+D:\Assesments_infinite\ADO.NET\Assesment\Test_1\EmployeManagement\EmployeManagement\bin\Debug\EmployeManagement.pdb
+D:\Assesments_infinite\ADO.NET\Assesment\Test_1\EmployeManagement\EmployeManagement\obj\Debug\EmployeManagement.csproj.AssemblyReference.cache
+D:\Assesments_infinite\ADO.NET\Assesment\Test_1\EmployeManagement\EmployeManagement\obj\Debug\EmployeManagement.csproj.CoreCompileInputs.cache
+D:\Assesments_infinite\ADO.NET\Assesment\Test_1\EmployeManagement\EmployeManagement\obj\Debug\EmployeManagement.exe
+D:\Assesments_infinite\ADO.NET\Assesment\Test_1\EmployeManagement\EmployeManagement\obj\Debug\EmployeManagement.pdb
